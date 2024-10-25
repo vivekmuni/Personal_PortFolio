@@ -1,0 +1,177 @@
+/*boilerplate*/
+@font-face {
+    font-family:'Gilroy';
+    src: url('Gilroy-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy', 'sans-serif';
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    background: black;
+    color: white;
+    scroll-behavior: smooth;
+
+}
+/*nav*/
+
+.nav{
+    height: 90px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 50px;
+
+
+}
+.nav h3 a{
+    text-decoration: none;
+    color: white;
+}
+.page2 {
+    display: flex;
+    gap: 50px;
+}
+.page2 h3 a{
+    border-bottom: 3px solid transparent;
+    transition:border-bottom 2s ease;
+}
+.page2 h3 a:hover{
+    border-bottom: 3px solid white;
+}
+.dark-mode{
+    background:black;
+    color: white;
+
+}
+.light-mode{
+    background:white;
+    color: black;
+}
+.light-mode .nav h3 a{
+    background:white;
+    color: black;
+}
+.light-mode .page2 h3 a {
+    border-bottom: 3px solid transparent;
+}
+.light-mode .page2 h3 a:hover{
+    border-bottom: 3px solid black;
+}
+/*home*/
+.home{
+    height: 420px;
+    width: 100%;
+
+
+}
+.image{
+    display: flex;
+    justify-content: center;
+}
+.myImage{
+    height: 70px;
+    width: 120px;
+    border-radius: 50%;
+}
+.line1{
+    text-align: center;
+}
+.line2{
+    text-align: center;
+    font-size: 45px;
+}
+.line3{
+    text-align: center;
+    font-size: 45px;
+}
+.butt{
+    display: flex;
+    justify-content: center;
+}
+.mybutt{
+    height: 50px;
+    width: 150px;
+    font-size: 1.2rem;
+    border-radius: 20px;
+    border: none;
+    background: white;
+    color: black;
+}
+.mybutt:hover{
+    background: wheat;
+    cursor: pointer;
+
+}
+.light-mode .mybutt{
+    background: black;
+    color: white;
+
+}
+.light-mode .mybutt:hover{
+    background: #1f1e1e;
+    color: white;
+
+}
+
+/*Projects*/
+.Projects{
+    height: 480px;
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+}
+.boxes{
+    margin-top: 20px;
+    display: flex;
+    justify-content:space-around;
+}
+.box{
+    height: 380px;
+    width: 320px;
+    border: 2px solid white;
+    border-radius: 20px;
+}
+.box .Ecommerce{
+    height: 150px;
+    margin-top:70px;
+    border-radius: 20px;
+}
+.box h3{
+    margin-top: 10px;
+}
+.box .MyPortfolio{
+    height: 120px;
+    margin-top:70px;
+    border-radius: 20px;
+}
+.box .Chatapplication{
+    height: 150px;
+    margin-top:70px;
+    border-radius: 20px;
+}
+.light-mode .Projects{
+    background: white;
+    color: black;
+}
+.light-mode .box{
+    width: 320px;
+    border: 2px solid black;
+
+}
+.light-mode .box .Ecommerce{
+    border: 2px solid black;
+}
+.light-mode .MyPortfolio{
+    border: 2px solid black;
+}
+.light-mode .Chatapplication{
+    border: 2px solid black;
+}
